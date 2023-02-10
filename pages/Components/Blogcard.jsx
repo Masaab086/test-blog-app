@@ -14,7 +14,7 @@ const Blogcard = (props) => {
         {props.title}
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
-        {props.content.length != undefined
+        {props.content != undefined
           ? props.content.substring(0, 160) + "...."
           : ""}
       </p>
