@@ -3,7 +3,7 @@ import { collection, doc, updateDoc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase-config";
 import Navbar from "../Components/Navbar";
 import { useRouter } from "next/router";
-const blog = () => {
+const Blog = () => {
   const [data, setData] = useState({
     title: "",
     content: "",
@@ -123,4 +123,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Blog;

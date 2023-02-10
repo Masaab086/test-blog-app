@@ -4,7 +4,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase-config";
 import { Router, useRouter } from "next/router";
 
-const newblog = () => {
+const Newblog = () => {
   const [data, setData] = useState({
     title: "",
     content: "",
@@ -81,4 +81,4 @@ const newblog = () => {
   );
 };
 
-export default newblog;
+export default Newblog;

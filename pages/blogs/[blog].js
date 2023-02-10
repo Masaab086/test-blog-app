@@ -4,7 +4,7 @@ import { doc, getDoc, deleteDoc } from "firebase/firestore";
 import { db } from "../../firebase-config";
 import Navbar from "../Components/Navbar";
 import { data } from "autoprefixer";
-const blog = () => {
+const Blog = () => {
   // Use State hoocks for data
   const [blogData, setBlogData] = useState();
   const [isLoading, setIsloading] = useState(true);
@@ -94,4 +94,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Blog;
